@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top 0px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+    word-spacing: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(201, 11%, 66%);
+}
+
+.text{
+    margin: 50px auto 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.text p{
+    margin-top: 25px;
+}
+
+.beforefooter .text{
+    width: 50%;
+}
+
+.text:nth-child(3){
+    width: 50%;
+}
+
+body main .text{
+    width: 50%;
+}
+
+.button{
+    margin-top: 28px;
+}
+
+button{
+    width: 180px;
+    padding: 17px;
+    border: 1px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+button:first-child{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 3px 9px 0px hsl(210, 10%, 33%);
+}
+
+button:nth-child(2){
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 3px 8px 1px hsl(210, 10%, 33%);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+nav p a:hover{
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+/* nav .socials a:hover{
+    color: hsl(171, 66%, 44%);
+} */
+ 
+
+header{
+    margin: 100px auto;
+    text-align: center;
+    width: 50%;
+}
+
+header .text p{
+    margin-top: 20px;
+}
+
+.section1{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.section1 .image img{
+    width: 600px;
+    margin-left: -50px;
+}
+
+.section1 .section1-texts{
+    justify-content: start;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3em;
+    /* padding-right: 50px; */
+    text-align: left;
+    padding-right: 180px;
+}
+
+/* .section1 .section1-texts .section-text h3{
+
+} */
+
+.section1 .section1-texts .section-text p{
+    margin-top: 5px;
+    padding-right: 180px;
+}
+
+
+#devices{
+   width: 55%;
+   margin-top: 75px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#devices img{
+    width: 600px;
+    height: 456px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.previews{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin: 100px auto; 
+    text-align: center;
+}
+
+.pre-text h3{
+    margin-top: 35px;
+}
+
+.pre-text p{
+    margin-top: 10px;
+}
+
+.companies{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 200px;
+}
+
+.beforefooter{
+    margin-top: 200px;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    /* padding: 20px 100px; */
+    background-color: whitesmoke;
+}
+
+nav{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* footer nav span{
+    padding-top: 10px;
+} */
+
+nav .footericon img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.socials{
+    grid-column: 6;
+    /* display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em; */
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+
+@media (max-width:480px){
+    body{
+        width: 100%;
+        background-image: url(./images/bg-header-desktop.png);
+        background-repeat: no repeat;
+        background-position: top 0px;
+        text-align: center;
+    }
+
+    header{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header .text{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 35px auto;
+        gap: 0.5em;
+    }
+
+    button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    main .text{
+        /* margin-top: 150px; */
+        width: 90%;
+        margin: 150px auto auto auto;
+        /* padding: 20px; */
+    }
+
+    .section1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section1 .image{
+        width: 90%;
+        margin: auto;
+    }
+
+    .section1 .image img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .section1 .section1-texts{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        text-align: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+
+    .section-text{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .section1 .section1-texts .section-text p{
+        padding-right: 0;
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    #devices{
+        width: 95%;
+        height: 256.7px;
+        margin: 100px auto;
+    }
+
+    #devices img{
+        width: 100%;
+        height: 296px;
+    }
+
+    main .text:nth-child(2){
+        margin-top: 0;
+    }
+
+    .previews{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .previews .pre{
+        padding: 20px;
+    }
+
+    .companies{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 7em;
+    }
+
+    .beforefooter{
+        width: 90%;
+        margin: auto;
+    }
+
+    footer{
+        width: 100%;
+        padding: 60px auto;
+    }
+
+    nav{
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        text-align: center;
+    }
+
+    .faq{
+        margin-top: 20px;
+    }
+
+    .links p:nth-child(2){
+        margin-top: 1.5em;
+    }
+
+    .socials{
+        justify-content: center;
+        gap: 2em;
+        margin-top: 10px;
+    }
+
+    .beforefooter .text{
+        width: 80%;
+    }
+    
+    .text:nth-child(3){
+        width: 70%;
+    }
+    
+    body main .text{
+        width: 80%;
+    }
+}
